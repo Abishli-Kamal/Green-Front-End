@@ -6,44 +6,54 @@
 body {
     background-color: whitesmoke;
 }
-header {
-    #headerTop {
-        .email,
-        .phone {
-            margin-top: 2%;
-            i {
-                margin-top: 3px;
+#headerTop {
+    .email,
+    .phone {
+        margin-top: 2%;
+        i {
+            margin-top: 3px;
+            color: green;
+        }
+        a {
+            color: black;
+            margin-left: 4px;
+            text-decoration: none;
+            &:hover {
                 color: green;
-            }
-            a {
-                color: black;
-                margin-left: 4px;
-                text-decoration: none;
-                &:hover {
-                    color: green;
-                    transition: 0.5s;
-                }
+                transition: 0.5s;
             }
         }
-        .icons {
-            margin-top: 1%;
-            ul {
-                li {
-                    list-style: none;
-                    a {
-                        i {
-                            font-size: 15px;
-                            color: black;
-                            &:hover {
-                                color: green;
-                            }
+    }
+    .icons {
+        margin-top: 1%;
+        ul {
+            li {
+                list-style: none;
+                a {
+                    i {
+                        font-size: 15px;
+                        color: black;
+                        &:hover {
+                            color: green;
                         }
                     }
                 }
             }
         }
     }
+}
+header {
+   position:sticky;
+   top: 0;
+   background-color: white;
+   z-index: 1;
+  
     #headerBottom {
+        position: sticky;
+        top: 0px;
+        background-color: white;
+        z-index: 1;
+       
         margin-top: 1%;
         .logo {
             a {
@@ -161,11 +171,11 @@ main {
     }
     #contact {
         margin-top: 3%;
-        .adress{
+        .adress {
             border-top: 3px solid green;
             border-bottom: 3px solid green;
         }
-        .form-action{
+        .form-action {
             border-top: 3px solid green;
             border-bottom: 3px solid green;
         }
@@ -178,24 +188,23 @@ main {
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                i{
+                i {
                     color: green;
                 }
-                &:hover{
+                &:hover {
                     background-color: #5cb874;
                     transition: 0.5s;
-                    i{
+                    i {
                         color: white;
                     }
                 }
             }
         }
-
     }
 }
-footer{
+footer {
     margin-top: 4%;
-    #footerEnd{
+    #footerEnd {
         background-color: black;
         color: white;
     }

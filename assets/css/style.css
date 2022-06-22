@@ -9,49 +9,62 @@ body {
   background-color: whitesmoke;
 }
 
-header #headerTop .email,
-header #headerTop .phone {
+#headerTop .email,
+#headerTop .phone {
   margin-top: 2%;
 }
 
-header #headerTop .email i,
-header #headerTop .phone i {
+#headerTop .email i,
+#headerTop .phone i {
   margin-top: 3px;
   color: green;
 }
 
-header #headerTop .email a,
-header #headerTop .phone a {
+#headerTop .email a,
+#headerTop .phone a {
   color: black;
   margin-left: 4px;
   text-decoration: none;
 }
 
-header #headerTop .email a:hover,
-header #headerTop .phone a:hover {
+#headerTop .email a:hover,
+#headerTop .phone a:hover {
   color: green;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 
-header #headerTop .icons {
+#headerTop .icons {
   margin-top: 1%;
 }
 
-header #headerTop .icons ul li {
+#headerTop .icons ul li {
   list-style: none;
 }
 
-header #headerTop .icons ul li a i {
+#headerTop .icons ul li a i {
   font-size: 15px;
   color: black;
 }
 
-header #headerTop .icons ul li a i:hover {
+#headerTop .icons ul li a i:hover {
   color: green;
 }
 
+header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 1;
+}
+
 header #headerBottom {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  background-color: white;
+  z-index: 1;
   margin-top: 1%;
 }
 
